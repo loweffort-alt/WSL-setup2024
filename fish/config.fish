@@ -22,6 +22,8 @@ end
 
 # Alias Paths
 alias desktop="cd /mnt/c/Users/farfa/OneDrive/Escritorio"
+alias obsd="cd /mnt/d/Obsidian/"
+alias diskD="cd /mnt/d/"
 alias copypwd="pwd | xclip -sel clip"
 alias copyfile="xclip -sel clip < $1"
 

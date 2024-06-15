@@ -50,8 +50,8 @@ keybinds clear-defaults=true {
     tab {
         bind "Alt t" { SwitchToMode "Normal"; }
         bind "r" { SwitchToMode "RenameTab"; TabNameInput 0; }
-        bind "h" "Left" "Up" "k" { GoToPreviousTab; }
-        bind "l" "Right" "Down" "j" { GoToNextTab; }
+        bind "Left" "Up" { GoToPreviousTab; }
+        bind "Right" "Down" { GoToNextTab; }
         bind "n" { NewTab; SwitchToMode "Normal"; }
         bind "x" { CloseTab; SwitchToMode "Normal"; }
         bind "s" { ToggleActiveSyncTab; SwitchToMode "Normal"; }
@@ -201,10 +201,10 @@ keybinds clear-defaults=true {
       bind "Alt g" { SwitchToMode "Locked"; }
       bind "Alt q" { Quit; }
       bind "Alt n" { NewPane; }
-      bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
-      bind "Alt l" "Alt Right" { MoveFocusOrTab "Right"; }
-      bind "Alt j" "Alt Down" { MoveFocus "Down"; }
-      bind "Alt k" "Alt Up" { MoveFocus "Up"; }
+      bind "Alt Left" { MoveFocusOrTab "Left"; }
+      bind "Alt Right" { MoveFocusOrTab "Right"; }
+      bind "Alt Down" { MoveFocus "Down"; }
+      bind "Alt Up" { MoveFocus "Up"; }
       bind "Alt =" "Alt +" { Resize "Increase"; }
       bind "Alt -" { Resize "Decrease"; }
       bind "Alt [" { PreviousSwapLayout; }
