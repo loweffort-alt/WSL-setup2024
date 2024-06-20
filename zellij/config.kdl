@@ -50,8 +50,8 @@ keybinds clear-defaults=true {
     tab {
         bind "Alt t" { SwitchToMode "Normal"; }
         bind "r" { SwitchToMode "RenameTab"; TabNameInput 0; }
-        bind "Left" "Up" { GoToPreviousTab; }
-        bind "Right" "Down" { GoToNextTab; }
+        bind "h" "Left" "Up" { GoToPreviousTab; }
+        bind "l" "Right" "Down" { GoToNextTab; }
         bind "n" { NewTab; SwitchToMode "Normal"; }
         bind "x" { CloseTab; SwitchToMode "Normal"; }
         bind "s" { ToggleActiveSyncTab; SwitchToMode "Normal"; }

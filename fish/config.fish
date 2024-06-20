@@ -13,7 +13,7 @@ set -x LDFLAGS -L/usr/local/opt/zlib/lib
 set -x CPPFLAGS -I/usr/local/opt/zlib/include
 
 # Configurar rutas de proyectos
-set -gx PROJECT_PATHS "$HOME/Projects"
+set -gx PROJECT_PATHS "$HOME/Projects" /mnt/d/Obsidian/
 
 # Inicializar Homebrew
 if test -f /home/linuxbrew/.linuxbrew/bin/brew
@@ -22,19 +22,20 @@ end
 
 # Alias Paths
 alias desktop="cd /mnt/c/Users/farfa/OneDrive/Escritorio"
-alias obsd="cd /mnt/d/Obsidian/"
 alias diskD="cd /mnt/d/"
-alias copypwd="pwd | xclip -sel clip"
-alias copyfile="xclip -sel clip < $1"
+alias open="explorer.exe $1"
+alias cpwd="pwd | xclip -sel clip"
+alias cfile="xclip -sel clip < $1"
+alias obsidian="/mnt/c/users/farfa/AppData/Local/Programs/obsidian/Obsidian.exe"
 
 # Alias NPM
 alias nrd="npm run dev"
 alias ni="npm install $1"
 
 # Alias fish
-alias cfiles="cd $HOME/.config/"
 alias cfish="nvim $HOME/.config/fish/config.fish"
 alias cnvim="nvim $HOME/.config/nvim/init.lua"
+alias czellij="nvim $HOME/.config/zellij/config.kdl"
 alias rfish="source $HOME/.config/fish/config.fish"
 
 # Uncommment to activate Tmux as default
